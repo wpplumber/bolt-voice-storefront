@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import CategorySection from '../components/CategorySection.astro';
+import CartSidebar from '../components/CartSidebar.vue';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <Header />
+  <main>
+    <Hero />
+    <CategorySection />
+  </main>
+  <CartSidebar client:load />
+  <Footer />
+</Layout>
